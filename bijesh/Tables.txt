@@ -1,0 +1,9 @@
+ <!DOCTYPE HTML>
+ <html>
+ <table>
+        <tr>
+            <td>SN</td>
+            <td>Name</td>
+            <td>Address</td>
+        </tr>
+    </table>

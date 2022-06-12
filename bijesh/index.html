@@ -6,8 +6,27 @@
     <meta charset="uts-8">
     <meta name="author" content="your name">
     <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+        li:hover {
+            background-color: #555;
+            color: white;
+        }
+
         body {
-            background-color: black;
+            background-color: white;
         }
 
         p {
@@ -20,7 +39,9 @@
             font-size: 1.6em;
 
         }
-        h1{align-self: center;
+
+        h1 {
+            align-self: center;
             text-align: center;
             color: white;
             font-size: 2.3em;
@@ -32,12 +53,81 @@
     <h1>Welcome to my site</h1>
     <p>Hello there!</p>
     <p id="1"></p>
-    <script>
-        let x,y;
-        for (x=0;x<100;x++){
-         document.writeln(x);
-        }
-    </script>
+    <font color="black">
+        <div>First column</div>
+        <div>Second column</div>
+        <div>Third column</div>
+        <hr>
+        <div style="width: 33%;float:left; text-align: center;">First column</div>
+        <div style="width: 33%;float:left; text-align: center;">Second column</div>
+        <div style="width: 33%;float:left; text-align: center;">Third column</div>
+        <ol start="i" type="I">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+        <ul type="disc">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        <dl>
+            <dt><strong>one</strong></dt>
+            <dd>a</dd>
+            <dt>two</li>
+            <dd>b</dd>
+            <dt>three</dt>
+            <dd>c</dd>
+        </dl>
+        <div>
+            <ol type="A" start="5">
+                <li>Asia<ul type="square">
+                        <li>Nepal<ul type="disc">
+                                <li>Kathmandu</li>
+                                <li>Bhaktapur</li>
+                                <li>Lalitpur</li>
+                            </ul>
+                        </li>
+                        <li>India<ul type="disc">
+                                <li>New Delhi</li>
+                                <li>Mumbai</li>
+                                <li>Hyderabad</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
 
+                <li>Europe
+                    <ul type="square">
+                        <li>France</li>
+                        <li>Germany</li>
+                    </ul>
+                </li>
+                <li>South America</li>
+            </ol>
+    </font>
+    </div>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About
+                <ul>
+                    <li>Mission</li>
+                    <li>Vision</li>
+                    <li>Our Team</li>
+                </ul>
+            </li>
+            <li>Courses<ul>
+                    <li>Java</li>
+                    <li>PHP</li>
+                    <li>ASP</li>
+                    <li>Android</li>
+                </ul>
+            </li>
+            <li>Facility</li>
+            <li>Download</li>
+            <li>Contact</li>
+        </ul>
+    </div>
 
 </html>
