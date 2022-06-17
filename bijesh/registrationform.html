@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta name="author" content="bijesh">
+    <meta charset="UTF-8">
+    <title>Registration Forms</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .wrapper {
+            background-color: rgb(46, 227, 46);
+            color: aliceblue;
+            width: 500px;
+            padding: 25px;
+            margin: 25px auto 0px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .inputfield {
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+        }
+
+        .radio {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .checks {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .buttons {
+            padding: 10px;
+            margin: 10px;
+
+            text-align: center;
+        }
+
+        h4 {
+            text-align: left;
+            font-style: normal;
+            padding-bottom: 5px;
+        }
+
+        .inputtext {
+            margin-right: 12px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="heading">Registration</h1>
+        <form method="POST" enctype="multipart/form-data">
+
+            <div class="inputfield">
+                <h4>Name:</h4>
+                <div class="inputtext"><input type="text" placeholder="Name"></div>
+            </div>
+            <div class="inputfield">
+                <h4>Email:</h4>
+                <div class="inputtext">
+                    <input type="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="inputfield">
+                Password:<input type="password" placeholder="Password">
+            </div>
+            <div class="radio">
+                Gender: &nbsp;&nbsp;&nbsp;Male<input type="radio" value="male" name="gender"> Female<input type="radio"
+                    value="female" name="gender"> Other<input type="radio" value="other" name="gender">
+            </div>
+            <div class="checks">
+                Courses: &nbsp;&nbsp;&nbsp;PHP<input type="checkbox" value="PHP" name="course1"> ASP<input
+                    type="checkbox" value="ASP" name="course2"> Java<input type="checkbox" value="Java" name="course3">
+            </div>
+            <div class="inputfield">
+                Photo: &nbsp;&nbsp;&nbsp;<input type="file" placeholder="filename">
+            </div>
+            <div class="inputfield">
+                DOB: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date">
+            </div>
+            <div class="inputfield">
+                Country:<select id="country" name="country" size="1">
+                    <option>choose a country</option>
+                    <option value="NP">Nepal</option>
+                    <option value="IN">India</option>
+                    <option value="CN">China</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="BH">Bhutan</option>
+                    <option value="SL">Sri Lanka</option>
+                </select>
+            </div>
+            <div class="inputfield">
+                Message: &nbsp;&nbsp;&nbsp;<textarea name="message" placeholder="Message"></textarea>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Submit"> <input type="reset" value="reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
