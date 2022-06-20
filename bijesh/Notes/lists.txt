@@ -1,0 +1,5 @@
+Order list ol attributes: start="1\2\3\4\5..."	style="1\a\A\i\I"
+unordered list ul	style="circle\square\disc"
+definition list dl
+to present list item, <li> in ol ul
+<dt> and <dd> in dl
