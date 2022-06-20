@@ -7,6 +7,12 @@
     <title>Registration Forms</title>
 
     <style>
+        h1{
+            background-color: white;
+            border-radius: 20px;
+            color:rgb(46, 227, 46);
+            min-height: 80px;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -17,7 +23,7 @@
 
         .wrapper {
             background-color: rgb(46, 227, 46);
-            color: aliceblue;
+            color: rgb(255, 255, 255);
             width: 500px;
             padding: 25px;
             margin: 25px auto 0px;
@@ -27,7 +33,7 @@
         .inputfield {
             padding: 10px;
             margin: 10px;
-            display: flex;
+            display: block;
         }
 
         .radio {
@@ -43,7 +49,6 @@
         .buttons {
             padding: 10px;
             margin: 10px;
-
             text-align: center;
         }
 
@@ -54,8 +59,13 @@
         }
 
         .inputtext {
-            margin-right: 12px;
+            display: inline;
             position: relative;
+            float: right;
+            margin-right: 35%;
+        }
+        .tag{
+            display:inline;
         }
     </style>
 </head>
@@ -66,34 +76,34 @@
         <form method="POST" enctype="multipart/form-data">
 
             <div class="inputfield">
-                <h4>Name:</h4>
-                <div class="inputtext"><input type="text" placeholder="Name"></div>
+               <p class="tag" >Name:</p>
+             <div class="inputtext"><input type="text" placeholder="Name"></div>
             </div>
             <div class="inputfield">
-                <h4>Email:</h4>
+                <p class="tag" >Email:</p>
                 <div class="inputtext">
                     <input type="email" placeholder="Email">
                 </div>
             </div>
             <div class="inputfield">
-                Password:<input type="password" placeholder="Password">
+                <p class="tag" >Password:</p><div class="inputtext"><input type="password" placeholder="Password"></div>
             </div>
             <div class="radio">
-                Gender: &nbsp;&nbsp;&nbsp;Male<input type="radio" value="male" name="gender"> Female<input type="radio"
+                <p class="tag">Gender:</p> &nbsp;&nbsp;&nbsp;Male<input type="radio" value="male" name="gender"> Female<input type="radio"
                     value="female" name="gender"> Other<input type="radio" value="other" name="gender">
             </div>
             <div class="checks">
-                Courses: &nbsp;&nbsp;&nbsp;PHP<input type="checkbox" value="PHP" name="course1"> ASP<input
+                <p class="tag">Courses:</p> &nbsp;&nbsp;&nbsp;PHP<input type="checkbox" value="PHP" name="course1"> ASP<input
                     type="checkbox" value="ASP" name="course2"> Java<input type="checkbox" value="Java" name="course3">
             </div>
             <div class="inputfield">
-                Photo: &nbsp;&nbsp;&nbsp;<input type="file" placeholder="filename">
+                <p class="tag">Photo:</p> &nbsp;&nbsp;&nbsp;<input type="file" placeholder="filename">
             </div>
             <div class="inputfield">
-                DOB: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date">
+                <p class="tag">DOB:</p><input class="inputfield" type="date">
             </div>
             <div class="inputfield">
-                Country:<select id="country" name="country" size="1">
+                <p class="tag">Country:</p><select id="country" name="country" size="1">
                     <option>choose a country</option>
                     <option value="NP">Nepal</option>
                     <option value="IN">India</option>
@@ -104,7 +114,7 @@
                 </select>
             </div>
             <div class="inputfield">
-                Message: &nbsp;&nbsp;&nbsp;<textarea name="message" placeholder="Message"></textarea>
+                <p class="tag">Message:</p> &nbsp;&nbsp;&nbsp;<textarea class="inputfield" name="message" placeholder="Message"></textarea>
             </div>
 
             <div class="buttons">
