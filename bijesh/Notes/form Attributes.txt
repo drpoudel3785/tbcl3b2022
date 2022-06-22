@@ -1,4 +1,4 @@
-types of form
+types of input
 text
 number
 email

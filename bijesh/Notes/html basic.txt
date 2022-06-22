@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>....</title>
-	<meta charset="uts-8">
+	<meta charset="utf-8">
 	<meta name="author" content="your name">
 </head>
 
