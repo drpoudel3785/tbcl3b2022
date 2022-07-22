@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(255, 250, 154);
+        }
+
+
+
+        .heads1 {
+            display: inline-block;
+            text-align: center;
+            width: 100px;
+            top: 1px;
+            left: 1px;
+            border: 1px solid black;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .heads2 {
+            display: inline-block;
+            text-align: center;
+            width: 100px;
+            top: 1px;
+            left: -2px;
+            border: 1px solid black;
+            position: relative;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+
+        .heads3 {
+            display: inline-block;
+            text-align: center;
+            width: 100px;
+            top: 10px;
+            left: 212px;
+            border: 1px solid black;
+            position: absolute;
+            font-weight: bold;
+        }
+
+
+        div.white1 {
+            background: white;
+            padding: 0px;
+            width: 306px;
+            height: 205.5px;
+            border: 1px solid black;
+        }
+        ol{
+            left: -20px;
+            position: relative;
+        }
+
+        div.blue1 {
+            width: 100px;
+            height: 180px;
+            background-color: rgb(156, 200, 255);
+            font-size: 12px;
+            padding: 5px;
+
+
+            position: relative;
+            left: 1px;
+            top: 2px;
+            border: 1px solid black;
+        }
+
+        div.yellow1 {
+            width: 100px;
+            background-color: yellow;
+            padding: 5px;
+            text-align: right;
+
+            position: relative;
+            left: 102px;
+            top: -178px;
+            border: 1px solid black;
+        }
+
+        div.red1 {
+            width: 100px;
+            background-color: red;
+            padding: 5px;
+            text-align: center;
+
+            position: relative;
+            left: 203px;
+            top: -208.5px;
+            border: 1px solid black;
+        }
+
+        div.green1 {
+            width: 201px;
+            height: 148.5px;
+            background-color: green;
+            padding: 5px;
+            font-size: 14px;
+
+            position: relative;
+            left: 102px;
+            top: -207.5px;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="white1">
+        <div class="heads1">Column 1</div>
+
+        <div class="heads2">Column 2</div>
+
+        <div class="heads3">Column 3</div>
+
+        <div class="blue1">
+            <p>A numbered list:</p>
+            <ol style="display: block;">
+                <li>Able</li>
+                <li>Baker</li>
+                <li>Charlie</li>
+                <li>Delta</li>
+                <li>Echo</li>
+            </ol>
+        </div>
+
+        <div class="yellow1">B</div>
+        <div class="red1">C</div>
+        <div class="green1">
+            <p>An unnumbered list:</p>
+            <ul>
+                <li>Pounds</li>
+                <li>Dollars</li>
+                <li>Euro</li>
+                <li>Yen</li>
+                <li>Roubles</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

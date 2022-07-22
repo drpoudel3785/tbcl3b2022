@@ -1,0 +1,15 @@
+1. Mind Map
+	site objective
+	audience
+	similar sites study
+	major functions
+	site structure
+	content
+suggested app : edraw mind map
+2. Wire frames -> sketch -> low fidelity -> high fidelity
+	visual representation of an interface, behavior functionality, blueprint
+	
+	Types
+	1.sketches
+	2.
+3. HTML and CSS code.

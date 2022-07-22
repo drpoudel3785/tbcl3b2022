@@ -1,0 +1,19 @@
+types of input
+text
+number
+email
+radio
+checkbox
+submit
+reset
+color 
+date
+file
+
+methods of form
+GET/POST
+
+
+action="target url"
+
+enctype="multipart/form-data"

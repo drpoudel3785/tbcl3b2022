@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <script src="scripts.js"></script>
+</head>
+<body>  
+  
+    <h1 onclick="h1click()">Hello! You have clicked this header 0 times</h1>
+    <button onclick="printDateTime()">Show date and time</button>
+    <div id="clock"></div>
+    <script>
+        i=0;
+        function h1click(){
+        i++;
+        document.getElementsByTagName("h1")[0].innerHTML="Hello! You have clicked this header "+i+" times"; 
+        }
+        function printDateTime(){document.getElementById("clock").innerHTML=showDateTime();}
+       </script>
+</body>
+</html>

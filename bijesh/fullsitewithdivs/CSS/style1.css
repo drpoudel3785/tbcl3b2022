@@ -1,0 +1,50 @@
+.container-fluid{
+    width:100%;
+    height: auto;
+    background-color: #ddccee;
+}
+.container{
+    width:1320px;
+    min-height: 300px;
+    background-color: rgb(215, 217, 219);
+    position: absolute;
+    top: 110px;
+
+}
+.fixedtop
+{
+    position: fixed;
+    top: 0px;
+    min-height: 100px;
+    z-index: 10;
+}
+
+.bottomfixed
+{
+    position: fixed;
+    bottom: 0px;
+}
+.showhide:hover .hide{
+    visibility: visible;
+
+}
+.hide{
+    visibility: hidden;
+}
+
+body{
+    background-color: #00ff00;
+}
+@media screen and (min-width: 480px) and (max-width:768px) {
+    
+    body{
+        background-color: #ff0000;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    
+    body{
+        background-color: #003cff;
+    }
+}

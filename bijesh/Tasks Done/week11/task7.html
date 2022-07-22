@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <style>
+        thead{
+            background: rgb(0, 174, 157);
+            
+        }
+        
+        th{
+            width: 100px;
+            padding :5px 10px 20px 10px;
+            color: white;
+        }
+        
+        td{
+            text-align: center;
+            width: 100px;
+            padding :5px 10px 20px 10px;
+        }
+        .r0{
+            background: rgb(231, 245, 247);
+        }
+        
+        .r1{
+            background: rgb(177, 208, 208);
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th>S.N</th>
+            <th>Name</th>
+            <th>Image</th>
+        </tr></thead>
+    
+    <script>
+     for(i=1;i<=4;i++){
+        document.write("<tr class=\"r"+i%2+"\"><td>"+i+"</td><td>"+"Name "+i+"</td><td>"+i+".jpg"+"</td></tr>");
+     }
+    </script>
+    </table>
+</body>
+</html>

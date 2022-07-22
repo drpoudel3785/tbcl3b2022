@@ -1,0 +1,4 @@
+css selectors
+1. Type selector: p{} h1{} button{}
+2. ID selector: #id1{} #id2{} #id3{}
+3. Class selector: .class1{} .class2{} .class3{} 

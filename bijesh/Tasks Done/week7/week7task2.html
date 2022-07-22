@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset style="width: 40%;">
+            <h3>HTML Form Test</h3>
+            <table width="100%" cellpadding="6px" >
+                <tr>
+                    <td colspan="2">
+                        Name
+                    </td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Address
+                    </td>
+                    <td>
+                        <input type="text" name="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Email
+                    </td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Gender
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Hobbies
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby1" value="sports">Sports
+                        <input type="checkbox" name="hobby2" value="movies">Movies
+                        <input type="checkbox" name="hobby3" value="travelling">Travelling
+                    </td>
+                </tr>   
+                <tr>
+                    <td colspan="2">
+                        Country
+                    </td>
+                    <td>
+                       <select name="country" id="country"><option value="npl">Nepal</option><option value="ind">India</option><option value="usa">United States of America</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Message
+                    </td>
+                    <td>
+                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit" name="submit">
+                        
+                        <input type="reset" value="Reset" name="reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
