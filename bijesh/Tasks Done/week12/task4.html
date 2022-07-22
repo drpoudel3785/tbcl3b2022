@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <script src="scripts.js"></script>
+</head>
+<body>  
+  
+ <p onclick="changecolorofp()">This is a paragraph, click it to change its color. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, laboriosam? Temporibus libero suscipit tempore odio nesciunt, laboriosam eligendi amet sunt, quidem quod vel earum at dignissimos corporis corrupti quibusdam molestiae.</p>
+    <script>
+        function rndmcolor(){
+            return Math.floor(Math.random()*256);
+        }
+        function changecolorofp(){ 
+      document.getElementsByTagName("p")[0].style.background="rgb("+rndmcolor()+","+rndmcolor()+","+rndmcolor()+")"}
+    </script>
+</body>
+</html>
