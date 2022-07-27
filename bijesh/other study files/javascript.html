@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript</title>
+  <script src="js/scrips.js"></script>
+</head>
+<body onload="startTime()">
+<button onclick="today()">Today is:</button>
+<button onclick="close()">Exit</button>
+<h2>JavaScript Clock</h2>
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+ document.write("Good Afternoon!<br>");
+        document.write("we are going to learn JavaScript");
+        alert("Hi, Are Your Ready For Learning?");
+        
+        num1=true;
+        var num2=true;
+        let sum= num1+ num2;
+        document.write("<br>The sum of "+num1+" and "+num2+" is "+sum);
+        x=prompt("Enter First number:");
+        y=prompt("Enter Second number:");
+        sum=x+y;
+        document.write("<br>The sum of "+x+" and "+y+" is "+sum);
+        sum=parseInt(x)+parseInt(y);
+        document.write("<br>The sum of "+x+" and "+y+" is "+sum+" "+typeof(num1));
+        
+        
+        for(i=0;i<100;i++){
+            document.write("case"+i+ ":<br>"+ "document.write('Even');" +"break;");
+            i++;
+            document.write("case"+i+ ":<br>"+ "document.write('Odd');" +"break;");
+        }
+        
+</script>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript</title>
+</head>
+<body>
+    <div id="txt"></div>
+
+
+    <script>
+       
+        function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+    </script>
+    
+</body>
+</html> -->

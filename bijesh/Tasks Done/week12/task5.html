@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+</head>
+<body>  
+    <input type="text" id="checkstring"> <button onclick="CheckNaN()">Check</button><div id="state">Click the button to check</div>
+    <br><br>
+    Password:<input type="password" id="password">
+    <br><br>
+    Confirm Password:<input type="password" id="confirm">
+    <br><button onclick="CheckPass()">Check</button><div id="passtate">Click the button to check</div>
+     <script>
+        function CheckNaN(){
+            if(isNaN( parseInt(document.getElementById("checkstring").value)))
+            {document.getElementById("state").innerHTML="Yes it is NaN";}
+            else
+            {document.getElementById("state").innerHTML="No it is not NaN";}
+        }
+        function CheckPass(){
+            if(document.getElementById("password").value===document.getElementById("confirm").value){
+                document.getElementById("passtate").innerHTML="passwords are same";
+            }
+            else{document.getElementById("passtate").innerHTML="passwords are not same";}
+        }
+    </script>
+</body>
+</html>

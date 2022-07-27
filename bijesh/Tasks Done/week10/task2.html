@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background: #00BFFF;
+        }
+
+        .header {
+            background-color: #ccaa66;
+            border: 3px solid black;
+            color: #330000;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #ccaa66;
+            font-style: italic;
+            font-size: 10px;
+            text-align: center;
+            padding: 10px;
+            border: 3px solid black;
+            color: #330000;
+        }
+
+        .footer p {
+            display: inline-block;
+            width: 300px;
+        }
+
+        .navbar {
+            background: #E8D882;
+            display: flex;
+        }
+
+        .contentbox {
+            width: 100%;
+            padding: 5px;
+            color: #330000;
+            background: #f1e8b0;
+            display: block;
+        }
+
+        .centerbox {
+            margin: 25%;
+            margin-top: 2%;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        .navbar nav ul li {
+            padding-top: 20px
+        }
+
+        ul a {
+            text-decoration: none;
+        }
+
+        .contentbox ul {
+            width: 350px;
+        }
+
+        .mainbox {
+            display: flex;
+            border: 3px solid black;
+            border-top: 0px;
+            border-bottom: 0px;
+        }
+
+        .contentbox figure img {
+            width: 250px;
+            height: 250px;
+            float: right;
+            position: relative;
+            right: -5%;
+            top: -10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="centerbox">
+        <header>
+            <div class="header">
+                <h1>Stinky Pete's Pirate Tavern</h1>
+            </div>
+        </header>
+        <div class="mainbox">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank">Home</a></li>
+                        <li><a href="#" target="_blank">Grog</a></li>
+                        <li><a href="#" target="_blank">Shanties</a></li>
+                        <li><a href="#" target="_blank">Become a swab</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contentbox">
+                <p>Avast maties! Here ye'll be findin' all these delights...</p>
+                <figure><img src="piratedude.png" alt="piratedude"></figure>
+
+                <ul>
+                    <li>Great grog</li>
+                    <li>All the rum you can drink</li>
+                    <li>Good honest pirate fare like weevily biscuits and stewed rat</li>
+                    <li>Wenches and swabs for every taste</li>
+                    <li>Salty seadogs singin' shanties</li>
+                    <li>...</li>
+                </ul>
+                <p>Berth 23<br>Nottingham Docks<br>0115 9324567</p>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright &copy; 2011 Stinky Pete's Pirate Tavern <a
+                    href="mailto:stinkeypete@arrr.com">stinkeypete@arrr.com</a></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
