@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garlic Bread Recipe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        body{background:#0d0d0d;}
+        *{box-sizing: border-box;font-family: 'Roboto', sans-serif;
+}
+        html{
+            margin: 0px;
+            padding: 0px;
+            scroll-behavior: smooth;
+        }
+        .container{
+            min-height: 100%;
+            height: inherit;
+            width: 1140px;
+            margin: auto;
+        }
+        .content{
+            position: relative;
+            top:100px;
+            width: inherit;
+            height: 1000px;
+            background-color: #fffffe;
+        }
+        header{
+            position: absolute;
+            top:0px;
+            width: inherit;
+            height: 110px ;
+            background-color: #FF8E3C;
+        }
+        header nav ul{
+            list-style-type: none;
+            display: inline-flex;
+            float: right;
+            position: relative;
+            top:-16px;
+        }
+        header nav ul a{
+            text-decoration: none;
+            color: #0d0d0d;
+        }
+        header figure{float:left; position: relative; left: 4%; margin: 0px;}
+        header figure img{
+            width: 160px;
+        }
+        header nav ul a li{
+            padding: 45px;
+        }
+        
+        header nav ul a:hover{
+            background-color: #FFB55E;
+        }
+        footer{
+            height: 265px;
+            width:inherit;
+            position: absolute;
+            bottom: -400px;
+            background-color: #0d0d0d;
+            color:#fffffe;
+        }
+        footer  ul{
+            list-style-type: none;
+            padding: 0px;
+        }
+        footer a {
+           
+            height:20px;
+            text-decoration: none;
+            color: #fffffe;
+            padding: 4px;
+        }
+        footer .sitemap p{
+            font-size: larger;
+            font-weight: bold;
+            margin-top:20px;
+        }
+        footer .socials nav{
+            width: 200px;
+        }
+        footer .socials p{
+            font-size: larger;
+            font-weight: bold;
+            margin-top:20px;
+        }
+        footer .sitemap {float:left;width: 10%; color: #fffffe; padding: 5px; margin:0px;margin-left:7%;}
+        footer .socials {float:right;margin-right:10%;width: 10%; color: #fffffe; padding: 5px; }
+        #iconlogo{
+            display: inline;
+            
+            height: 20px;
+            position: relative;
+            left: -30px;
+            top: 5px;
+        }
+        #iconlink{
+            position: relative;
+            left:-25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <figure><img src="images/logo.png" alt="logo"></figure>
+        <nav>
+            <ul>
+                <a href="index.html" title="Home"><li>Home</li></a>
+                <a href="recipes.html" title="Recipes"><li>Recipes</li></a>
+                <a href="about.html" title="About"><li>About</li></a>
+                <a href="contact.html" title="Contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <div class="sidebar"></div>
+    </div>
+    <footer>
+        <div class="sitemap">
+            <p>Site Map</p>
+        <nav>
+            <ul>
+                <a href="index.html" title="Home"><li>Home</li></a>
+                <a href="recipes.html" title="Recipes"><li>Recipes</li></a>
+                <a href="about.html" title="About"><li>About</li></a>
+                <a href="contact.html" title="Contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="socials">
+        <p>Socials</p>
+       
+    <nav>
+        <ul>
+            <a href="https://instagram.com/bijeshman" title="Home"><li><img src="images/instagram-logo.png" id="iconlogo"><span id="iconlink">@bijeshman</span></li></a>
+            <a href="mailto:bijeshmansth.bs@gmail.com" title="Recipes"><li><img src="images/email-icon.jpg" id="iconlogo"><span id="iconlink">Email</span></li></a>
+        </ul>
+    </nav>
+    
+</div>
+    </footer>
+</div>
+</body>
+
+</html>
